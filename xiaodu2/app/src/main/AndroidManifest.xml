@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.xiaodu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/desktop"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.xiaodu.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.xiaodu.GameSetting"
+            android:label="@string/title_activity_shu_du_game_settings" >
+        </activity>
+        <activity
+            android:name="com.example.xiaodu.Game"
+            android:label="@string/title_activity_game" >
+        </activity>
+        <activity
+            android:name="com.example.xiaodu.RecordRank"
+            android:label="@string/title_activity_record_rank" >
+        </activity>
+        <service android:name=".Music"
+            android:permission="true">
+            <intent-filter>
+                <action android:name="com.example.music"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
